@@ -1,0 +1,8 @@
+web:
+  build: .
+  volumes:
+   - .:/app
+  ports:
+   - 5199:5199
+  env_file:
+   - ~/.creds.sh
